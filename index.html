@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitHub User Explorer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>GitHub User Explorer</h1>
+    <p>Search any GitHub username to see their profile and repositories.</p>
+  </header>
+
+  <div class="search-bar">
+    <input type="text" id="username-input" placeholder="Enter a GitHub username" autocomplete="off">
+    <button id="search-btn">Search</button>
+  </div>
+
+  <div id="message-area"></div>
+
+  <section id="profile-section">
+    <div class="profile-header">
+      <img id="avatar" src="" alt="Avatar">
+      <div class="profile-info">
+        <h2 id="name"></h2>
+        <div class="login" id="login"></div>
+        <p class="bio" id="bio"></p>
+        <div class="profile-meta" id="meta"></div>
+        <a class="profile-link" id="profile-link" href="#" target="_blank" rel="noopener">View on GitHub →</a>
+        <div class="stats-row" id="stats"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="lang-section">
+    <h3>Language breakdown</h3>
+    <div class="lang-bar" id="lang-bar"></div>
+    <div class="lang-list" id="lang-list"></div>
+  </section>
+
+  <section id="repos-section">
+    <div class="repos-toolbar">
+      <h3 id="repo-count-heading">Repositories</h3>
+      <select id="sort-select">
+        <option value="updated">Recently updated</option>
+        <option value="stars">Most stars</option>
+        <option value="name">Name (A–Z)</option>
+      </select>
+    </div>
+    <div class="repo-grid" id="repo-grid"></div>
+  </section>
+</div>
+
+<script src="script.js">
+ 
+</script>
+
+</body>
+</html>
